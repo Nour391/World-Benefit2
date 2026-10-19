@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="World Benefit: health awareness, free learning, safety guidance and environmental action.">
+
+<title>World Benefit | A Better World Starts With You</title>
+<script src="https://sdk.minepi.com/pi-sdk.js"></script>
+<script src="/app.js" defer></script>
+<style>
+:root{--blue:#0757c9;--navy:#08285d;--green:#159b67;--text:#18304d}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.6}
+header{background:linear-gradient(120deg,#0649b8,#0879dc 58%,#16a36c);color:white;padding:24px 18px 55px}
+nav{max-width:1050px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand{font-weight:800;font-size:1.2rem}nav a{color:white;text-decoration:none;margin:0 7px}
+.hero{max-width:1050px;margin:45px auto 0;display:grid;grid-template-columns:1.3fr .7fr;gap:25px;align-items:center}
+h1{font-size:clamp(2.2rem,6vw,4rem);line-height:1.08;margin:0 0 18px}.hero p{font-size:1.12rem;max-width:650px}
+.badge{display:inline-block;background:#ffffff24;border:1px solid #ffffff66;padding:6px 12px;border-radius:30px}
+.globe{font-size:7rem;text-align:center}.button{display:inline-block;background:white;color:var(--blue);padding:12px 18px;border-radius:12px;font-weight:bold;text-decoration:none;margin-top:8px;border:0;cursor:pointer}
+main{max-width:1050px;margin:-24px auto 0;padding:0 18px 40px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:white;border:1px solid #dbe8f7;border-radius:18px;padding:22px;box-shadow:0 8px 24px #0c3b6b0d}.icon{font-size:2rem}
+.card h2,.info h2{color:var(--navy);margin:8px 0}.info{padding:34px 0}.notice{background:#fff8df;border-left:4px solid #e2a900;padding:14px 16px;border-radius:8px}
+footer{background:#08285d;color:white;padding:24px 18px}footer .inner{max-width:1050px;margin:auto;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}footer a{color:white}
+.lang{border:1px solid #ffffff99;background:transparent;color:white;border-radius:8px;padding:8px}
+#piArea{max-width:1050px;margin:20px auto 0;padding:0 18px}
+#piStatus{margin-top:12px;padding:12px;border-radius:10px;background:#eef5ff;color:#08285d;overflow-wrap:anywhere}
+#piUser{font-weight:bold}
+@media(max-width:700px){.hero{grid-template-columns:1fr;margin-top:28px}.globe{font-size:5rem}.grid{grid-template-columns:1fr}nav a{margin:0 4px}}
+</style>
+</head>
+<body>
+<header><nav><div class="brand">🌍 World Benefit</div><div><a href="#features">Features</a><a href="#about">About</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a> <button class="lang" id="langBtn">العربية</button></div></nav>
+<div class="hero"><div><span class="badge" id="eyebrow">A public-benefit platform</span><h1 id="title">A Better World Starts With You</h1>
+<p id="intro">Explore useful information about health, learning, personal safety, and protecting our planet. Small actions can make a meaningful difference in every community.</p><a class="button" href="#features" id="cta">Explore the platform</a></div><div class="globe">🌍🌱</div></div></header>
+<section id="piArea" aria-label="Pi Network sign in">
+<h2 id="piHeading">Pi Network Sign In</h2>
+<p id="piIntro">Sign in with Pi to connect your Pioneer account to World Benefit.</p>
+<button class="button" id="piLogin">Sign in with Pi Network</button>
+<div id="piStatus" role="status">You are not signed in yet.</div>
+<div id="piUser"></div>
+</section>
+<main><section id="features" class="grid">
+<article class="card"><div class="icon">❤️</div><h2 id="healthTitle">Health Awareness</h2><p id="healthText">Read general wellness and prevention information from reliable sources. This site does not diagnose or treat medical conditions.</p></article>
+<article class="card"><div class="icon">📚</div><h2 id="learnTitle">Free Learning</h2><p id="learnText">Discover learning resources, digital skills, languages, and useful knowledge for everyday life.</p></article>
+<article class="card"><div class="icon">🛡️</div><h2 id="safetyTitle">Safety Guidance</h2><p id="safetyText">Learn general preparedness tips and follow official local instructions during emergencies.</p></article>
+<article class="card"><div class="icon">🌿</div><h2 id="environmentTitle">Environment</h2><p id="environmentText">Find practical ideas for reducing waste, saving water, recycling, and caring for green spaces.</p></article>
+<article class="card"><div class="icon">🤝</div><h2 id="communityTitle">Community Action</h2><p id="communityText">Support volunteering and positive community initiatives. Verify organizations before sharing information or donations.</p></article>
+<article class="card"><div class="icon">🌐</div><h2 id="accessTitle">For Everyone</h2><p id="accessText">A simple, mobile-friendly platform designed to grow with more languages and resources over time.</p></article>
+</section><section class="info" id="about"><h2 id="aboutTitle">About World Benefit</h2><p id="aboutText">World Benefit aims to make useful, reliable public-interest information easier to find. Content is educational and should be checked against qualified professionals and official sources where appropriate.</p><div class="notice" id="notice">Emergency: this website is not an emergency service. Contact your local emergency services when immediate help is needed.</div></section></main>
+<footer><div class="inner"><span>© <span id="year"></span> World Benefit</span><span><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></span></div></footer>
+</body>
+</html>
